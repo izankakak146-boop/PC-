@@ -1,0 +1,15 @@
+name: RDP-GAS
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Install-CRD
+      run: |
+        $URL = "https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi"
+        Invoke-WebRequest -Uri $URL -OutFile "crd.msi"
+        Start-Process msiexec.exe -Wait -ArgumentList "/i crd.msi /qn"
+    - name: Otorisasi-Jalan
+      run: |
+       & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepAJl1jLGeEc2zi50qv9_g49jyJqg8dddXCPiWxaF-KGHwraTskAxkFnOgBZtyUh6g" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME  --pin=123456
+        
