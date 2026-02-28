@@ -1,4 +1,4 @@
-name: RDP-FINAL-BOSS
+name: RDP-TERAKHIR-BISA
 on: workflow_dispatch
 jobs:
   build:
@@ -11,5 +11,5 @@ jobs:
         Start-Process msiexec.exe -Wait -ArgumentList "/i crd.msi /qn"
     - name: Otorisasi-Jalan
       run: |
-        & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepCjX8afqmMh9mvCQvDkidruv0njKStvijZbnRUgu6tzmuGq1kp6kir99oG_sgfH3w" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+        & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepAWtY0bIGPlQMMLQgDgkthHGPRmSkGSLvDVou81zLpPScwtrqBuvldLLd-WlPa9Zw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
         
