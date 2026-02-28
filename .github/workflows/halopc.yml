@@ -1,4 +1,4 @@
-name: RDP-BARU-1
+name: RDP-BARU-2
 on: workflow_dispatch
 jobs:
   build:
@@ -11,5 +11,5 @@ jobs:
         Start-Process msiexec.exe -Wait -ArgumentList "/i crd.msi /qn"
     - name: Otorisasi-Jalan
       run: |
-         & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepBI-ll3w3FOPIMcZBLb_zuC6zsxL5k6qsxrJvjasXvCmov5O_eHyHpA8wJJysUlvw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+        & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepDqgv0UWT7xNQLwoTcicS7WBxtMZVc8jFfAG-PCwFBlS-pImBpMWX15u3p9ixCgBw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
         
