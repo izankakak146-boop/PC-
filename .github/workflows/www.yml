@@ -15,7 +15,7 @@ jobs:
     - name: Menjalankan Host RDP
       run: |
         # GANTI TULISAN DI BAWAH INI DENGAN KODE POWERSHELL DARI GOOGLE:
-        & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepAxduVOkKPBd12SF3wq1RsG1mBEwAF_ewlLyIRP3Q9t4MxJ_QteN6K9A6319RcY8g" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+        & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfrIepBRTDx-av2BruIoyH71g9J77yRtBtAseu0CEmlc4-RknvNC3CZSsp9h7SWixODgNg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
       #
 
     - name: Menjaga Server Tetap Hidup
